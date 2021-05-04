@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
 
-function App() {
+// External Imports
+import { ToastContainer } from 'react-toastify';
+
+// Internal Import
+import AppRouter from './AppRouter';
+import AppHeader from './components/AppHeader';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <AppHeader />
+      <ToastContainer />
+      <AppRouter />
+    </Fragment>
   );
 }
 

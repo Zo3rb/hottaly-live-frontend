@@ -1,0 +1,9 @@
+// Exporting Defaults Pages Name as Named exported
+export { default as HomePage } from './HomePage';
+export { default as Login } from './Login';
+export { default as Register } from './Register';
+export { default as Dashboard } from './Dashboard';
+export { default as StripeCallback } from './StripeCallback';
+export { default as NewHotel } from './NewHotel';
+export { default as EditHotel } from './EditHotel';
+export { default as Hotel } from './Hotel';
